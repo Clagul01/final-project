@@ -1,3 +1,25 @@
+
+E-Commerce Coffee Shop
+
+This project was developed using Javascript, React, Tailwind CSS, and HTML. Its purpose is to create an ecommerce platform for a coffee shop, where customers can purchase delicious drinks at an affordable price.
+
+A broad overview of the application interface.
+
+![image](https://user-images.githubusercontent.com/116593146/227340308-7eb849fa-f096-4f5f-b557-ec0b040f9a63.png)
+
+To enhance the user experience, we have implemented various features such as a user-friendly interface, secure payment gateway, and easy navigation. Our team has also ensured that the website is optimized for all devices, making it accessible to a wider audience.
+
+We take pride in our attention to detail and commitment to delivering a high-quality product. Our goal is to provide a seamless shopping experience for coffee lovers, while also showcasing the unique offerings of the coffee shop.
+
+Located on the top right-hand side of the screen, you will find the NavBar, which offers a variety of useful functions such as Home, order and Basket, . On the right-hand side, you will see our beautiful logo floating.
+
+In the middle line you will be able to appreciate the available drinks with pictures, price and a button "Add to basket" making a very easy task to make an order. Thank you for choosing our platform to satisfy your coffee cravings. We hope you enjoy your shopping experience with us! Now please have a look the technical stuff bellow.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
