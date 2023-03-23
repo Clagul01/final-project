@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 
 const drinksList = [
@@ -52,37 +53,53 @@ export function ProductList({basket}) {
     const calculateTotal = () => {
         return basket.reduce((total, product) => (total) + (product.price), 0);
     };
+
+    const navigate = useNavigate();
+
+    const navigateToCheckout = () => {
+        navigate('/checkout')
+    };
         
     return(
-
-    <div className="basket-container">
-    <h2>Basket:</h2>
-    <ul className="basket">
-      {basket.map((product, index) => (
-        <li key={index}>
-        <p>{console.log(product)}</p>
-          <p>{product.name}</p>
-          <p>£{product.price}</p> 
-        </li>
-      ))}
-      {basket.length === 0 && <p>Your basket is empty.</p>}
-      {basket.length > 0 && (
-        <>
-          <li>
-            <p>Total:</p>
-            <p>£{calculateTotal()}</p>
-          </li>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" style={{ marginTop: "1rem" }}>Checkout</button>
-        </>
-      )}
-    </ul>
-  
-
-  </div>
-   
+        <div class='container has-text-centered'>
+        <div class='columns is-mobile is-centered'>
+          <div class='column is-5'>
+            <div class="card">
+              <div class='card-header'>
+                <div class="card-header-title
+                            has-text-success">
+                  Basket
+                </div>
+              </div>
+              <div class="card-content">
+                {basket.map((product, index) => (
+                    <li key={index}>
+                    {<span>{product.name}</span>} {"  =  £"} {<span>{product.price}</span>}
+                    </li>
+                ))}
+      
+                <div class='has-text-danger'>
+                  {basket.length === 0 && <p>Your basket is empty.</p>}
+                    {basket.length > 0 && (
+                    <>
+                    <p>
+                        <p>Total:</p>
+                        <p>£{calculateTotal()}</p>
+                    </p>
+                    <button onClick={navigateToCheckout} className="button is-primary" style={{ marginTop: "1rem" }}>Checkout</button>
+                    </>
+                    )}
+                </div>
+      
+              </div>
+            </div>
+          </div>
+    </div> 
+    </div>
     );
-};  
+                    }
 
+      
 
 export default function Order({setBasket, basket}) {
     return(
@@ -92,4 +109,4 @@ export default function Order({setBasket, basket}) {
             </section>
         </div>
     )
-}
+};
