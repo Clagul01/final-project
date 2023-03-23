@@ -13,11 +13,11 @@ function Navbar() {
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <div class="navbar-item">
             <figure class="image is-square is-64x64">
              <img src={ MainLogo }alt="Logo" style={{maxWidth: 400 + "px", maxHeight: 400 + "px"}}/>
             </figure>
-          </a>
+          </div>
           <span class="navbar-burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
@@ -29,9 +29,9 @@ function Navbar() {
             <Link to="/" class="navbar-item">Home</Link>
             <Link to="/order" class="navbar-item">Order</Link>
             <span class="navbar-item">
-              <a class="button is-primary is-inverted">
+              <div class="button is-primary is-inverted">
                 <Link to="/basket">Basket</Link>
-              </a>
+              </div>
             </span>
           </div>
         </div>
