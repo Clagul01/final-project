@@ -31,25 +31,25 @@ is-offset-one-fifth columns " >
 
 
 <div class="field">
-  <label class="label" for="textinput-0">Name</label>
+  <label class="label is-family-monospace" for="textinput-0">Name</label>
   <div class="control">
-    <input id="textinput-0" name="name" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-0" name="name" type="text" class="input is-family-monospace" onChange={handleChange}/>
   </div>
 </div>
 
 
 <div class="field">
-  <label class="label" for="textarea-0">Address</label>
+  <label class="label is-family-monospace" for="textarea-0">Address</label>
   <div class="control">                     
-    <textarea class="textarea" id="textarea-0" name="address" onChange={handleChange}></textarea>
+    <textarea class="textarea is-family-monospace" id="textarea-0" name="address" onChange={handleChange}></textarea>
   </div>
 </div>
 
 
 <div class="field">
-  <label class="label" for="textinput-2">Postcode</label>
+  <label class="label is-family-monospace" for="textinput-2">Postcode</label>
   <div class="control">
-    <input id="textinput-2" name="postcode" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-2" name="postcode" type="text" class="input is-family-monospace" onChange={handleChange}/>
    
   </div>
 </div>
@@ -62,32 +62,32 @@ is-offset-one-fifth columns " >
 
 
 <div class="field">
-  <label class="label" for="textinput-0">Name on Card</label>
+  <label class="label is-family-monospace" for="textinput-0">Name on Card</label>
   <div class="control">
-    <input id="textinput-0" name="cardName" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-0" name="cardName" type="text" class="input is-family-monospace" onChange={handleChange}/>
   </div>
 </div>
 
 
 <div class="field">
-  <label class="label" for="textinput-0">Card Number</label>
+  <label class="label is-family-monospace" for="textinput-0">Card Number</label>
   <div class="control">
-    <input id="textinput-0" name="cardNumber" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-0" name="cardNumber" type="text" class="input is-family-monospace" onChange={handleChange}/>
   </div>
 </div>
 
 <div class="field">
-  <label class="label" for="textinput-0">Expiry Date</label>
+  <label class="label is-family-monospace" for="textinput-0">Expiry Date</label>
   <div class="control">
-    <input id="textinput-0" name="expiryDate" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-0" name="expiryDate" type="text" class="input is-family-monospace" onChange={handleChange}/>
   </div>
 </div>
 
 
 <div class="field">
-  <label class="label" for="textinput-2">CVC</label>
+  <label class="label is-family-monospace" for="textinput-2">CVC</label>
   <div class="control">
-    <input id="textinput-2" name="postcode" type="text" class="input" onChange={handleChange}/>
+    <input id="textinput-2" name="postcode" type="text" class="input is-family-monospace" onChange={handleChange}/>
    
   </div>
 </div>

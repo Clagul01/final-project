@@ -77,14 +77,15 @@ export function ProductList({basket}) {
               <div class="card-content">
                 {basket.map((product, index) => (
                     <li key={index}>
-                    {<span>{product.name}</span>} {"  =  £"} {<span>{product.price}</span>}
+                    {<span class="is-family-monospace">{product.name}</span>} {"  =  £"} {<span>{product.price}</span>}
                     </li>
                 ))}
       
                 <div class='has-text-danger'>
                   {basket.length === 0 && 
                   <>
-                  <p>Your basket is empty.</p>
+                  <p class="is-family-monospace">Your basket is empty.</p>
+                  <hr/>
                   <button onClick={navigateToOrder} class="button is-danger">Order Now</button>
                   </>}
                     {basket.length > 0 && (
