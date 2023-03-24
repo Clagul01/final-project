@@ -98,8 +98,9 @@ is-offset-one-fifth columns " >
 
 
 </form>
-<input class="input is-primary column is-half
-is-offset-one-quarter" type="submit" value="Sumbit" onClick={navigateToSummary}/>
+
+<button class="button column is-half
+is-offset-one-quarter is-primary" onClick={navigateToSummary} type="submit">Submit</button>
         </div>
     )
 };
