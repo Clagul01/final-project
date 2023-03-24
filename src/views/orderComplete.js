@@ -11,8 +11,17 @@ We hope you enjoy your coffee :)
     </p>
           
     <p class="subtitle column">
-      Please follow us on: <span><a href="https://github.com/Clagul01/final-project">Github</a></span>
-    </p>
+      Please follow us on: <span><a href="https://github.com/Clagul01/final-project">Github</a></span><br/>
+    <a href="https://bulma.io">
+  <img
+    src="https://bulma.io/images/made-with-bulma.png"
+    alt="Made with Bulma"
+    width="128"
+    height="24"/>
+</a>
+    
+    </p> 
+  
   </div>
 </section>
 </>

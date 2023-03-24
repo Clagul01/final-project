@@ -12,8 +12,8 @@ export default function Home() {
 return(
   <section class="hero is-medium is-warning">
   <div class="hero-body columns">
-  <figure class="image column is-3" >
-  <img class="" src={MainLogo} alt="{index.bev}" style={{width: 300 + "px", height: 300 + "px"}}/>
+  <figure class="image column is-4" >
+  <img class="" src={MainLogo} alt="{index.bev}" style={{width: 350 + "px", height: 350 + "px", top: 20 + "px"}}/>
   </figure>
     <p class="title column is-9 is-family-monospace">
       Kaf-Fet (<i>Kah-Feht</i>):
