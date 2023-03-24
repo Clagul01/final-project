@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import "./summary.css";
 
 export default function Summary({details, basket}) {
     const navigate = useNavigate();
@@ -17,8 +18,8 @@ export default function Summary({details, basket}) {
                 <div class="column is-one-twelf has-padding-frame" style={{width: 165 + "px", height: 165 + "px", margin: 0}}>
                 <div>
                     <div class="card-content columns">
-                        <div class="content column">
-                            <h6 class="title">Please Check Your Details:</h6>
+                        <div class="card column">
+                            <h6 class="title is-size-5">Please Check Your Details:</h6>
                             <p class="subtitle">{details.name}</p>
                             <p class="subtitle is-size-6">{details.address}</p>
                             <p class="subtitle is-size-6">{details.postcode}</p>
@@ -27,8 +28,8 @@ export default function Summary({details, basket}) {
                             <p>Expiry Date: {details.expiryDate}</p>
                             <p>CVC: ***</p>
                         </div>
-                        <div class="content column">
-                        <h6 class="title">Order Summary:</h6>
+                        <div class="card column">
+                        <h6 class="title is-size-5">Order Summary:</h6>
                             { basketArray.map((index) => (
                                 <li key={index}>
                                 {<span>{index.name}</span>} {"  =  £"} {<span>{index.price}</span>}
