@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.hero {
+    background-image: url(./utils/Coffee\ shop\ -\ landing\ page.jpg);
+    background-size: cover;
+}
+
+.title {
+text-shadow:  5px 5px 5px rgb(155, 127, 255);
+text-decoration: solid;
+text-decoration-color: aquamarine;
+
+}
