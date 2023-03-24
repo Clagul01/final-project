@@ -4,13 +4,17 @@ import Order from "./views/order";
 import Basket from "./views/basket";
 import Checkout from './views/checkout';
 import MainLogo from "./utils/kaffet-logo.PNG";
-import { Route, Routes, Outlet, Link } from 'react-router-dom';
+import { Route, Routes, Outlet, Link} from 'react-router-dom';
 import { useState } from 'react';
 import Summary from './views/summary';
 import OrderComplete from './views/orderComplete';
 
+
+
 function Navbar() {
+
   return (
+    <>
   <section class="hero is-warning is-small">
   <div class="hero-head">
     <nav class="navbar">
@@ -18,7 +22,7 @@ function Navbar() {
         <div class="navbar-brand">
           <div class="navbar-item">
             <figure class="image is-square is-64x64">
-             <img src={ MainLogo }alt="Logo" style={{maxWidth: 400 + "px", maxHeight: 400 + "px"}}/>
+             <Link to='/home'><img src={ MainLogo }alt="Logo" style={{maxWidth: 400 + "px", maxHeight: 400 + "px"}}/></Link>
             </figure>
           </div>
           <span class="navbar-burger" data-target="navbarMenuHeroA">
@@ -29,7 +33,7 @@ function Navbar() {
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <Link to="/" class="navbar-item">Home</Link>
+            <Link to="/home" class="navbar-item">Home</Link>
             <Link to="/order" class="navbar-item">Order</Link>
             <span class="navbar-item">
               <div class="button is-primary is-inverted">
@@ -44,7 +48,8 @@ function Navbar() {
   </div>
   <Outlet /> 
   </section>
-  
+ 
+</>
   
   );
 }

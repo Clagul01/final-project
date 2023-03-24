@@ -59,6 +59,9 @@ export function ProductList({basket}) {
     const navigateToCheckout = () => {
         navigate('/checkout')
     };
+    const navigateToOrder = () => {
+        navigate('/order')
+    };
         
     return(
         <div class='container has-text-centered'>
@@ -79,7 +82,11 @@ export function ProductList({basket}) {
                 ))}
       
                 <div class='has-text-danger'>
-                  {basket.length === 0 && <p>Your basket is empty.</p>}
+                  {basket.length === 0 && 
+                  <>
+                  <p>Your basket is empty.</p>
+                  <button onClick={navigateToOrder} class="button is-danger">Order Now</button>
+                  </>}
                     {basket.length > 0 && (
                     <>
                     <p>
