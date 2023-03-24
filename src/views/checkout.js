@@ -1,4 +1,5 @@
-import React, { state } from "react";
+import React from "react";
+import { useNavigate } from "react-router";
 
 export default function Checkout({setDetails, details}) {
     
@@ -12,12 +13,18 @@ export default function Checkout({setDetails, details}) {
         const value = event.target.value;
         setDetails({ ...details, [name]: value });
       };
+
+      const navigate = useNavigate();
+
+    const navigateToSummary = () => {
+        navigate('/summary')
+    };
     
     return(
         <div>
             <form onSubmit={handleSubmit} class="form-horizontal column is-three-fifths
-is-offset-one-fifth " >
-<fieldset>
+is-offset-one-fifth columns " >
+<fieldset class="column is-6">
 
 
 <legend>Delivery Information:</legend>
@@ -46,12 +53,53 @@ is-offset-one-fifth " >
    
   </div>
 </div>
+</fieldset>
 
-<input class="input is-primary" type="submit" value="Sumbit"/>
+<fieldset class="column is-6">
+
+
+<legend>Payment details:</legend>
+
+
+<div class="field">
+  <label class="label" for="textinput-0">Name on Card</label>
+  <div class="control">
+    <input id="textinput-0" name="cardName" type="text" class="input" onChange={handleChange}/>
+  </div>
+</div>
+
+
+<div class="field">
+  <label class="label" for="textinput-0">Card Number</label>
+  <div class="control">
+    <input id="textinput-0" name="cardNumber" type="text" class="input" onChange={handleChange}/>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label" for="textinput-0">Expiry Date</label>
+  <div class="control">
+    <input id="textinput-0" name="expiryDate" type="text" class="input" onChange={handleChange}/>
+  </div>
+</div>
+
+
+<div class="field">
+  <label class="label" for="textinput-2">CVC</label>
+  <div class="control">
+    <input id="textinput-2" name="postcode" type="text" class="input" onChange={handleChange}/>
+   
+  </div>
+</div>
 
 </fieldset>
-</form>
 
+
+
+
+</form>
+<input class="input is-primary column is-half
+is-offset-one-quarter" type="submit" value="Sumbit" onClick={navigateToSummary}/>
         </div>
     )
 };

@@ -6,6 +6,8 @@ import Checkout from './views/checkout';
 import MainLogo from "./utils/kaffet-logo.PNG";
 import { Route, Routes, Outlet, Link } from 'react-router-dom';
 import { useState } from 'react';
+import Summary from './views/summary';
+import OrderComplete from './views/orderComplete';
 
 function Navbar() {
   return (
@@ -50,6 +52,7 @@ function Navbar() {
 function App() {
   const [basket, setBasket] = useState([]);
   const [details, setDetails] = useState([]);
+  
   return (
     <Routes>
       <Route path="/" element={<Navbar />}>
@@ -68,6 +71,14 @@ function App() {
         <Route
           path="/checkout"
           element={<Checkout setDetails={setDetails} details={details}/>}
+          />
+        <Route
+          path="/summary"
+          element={<Summary details={details} basket={basket}/>}
+          />
+        <Route
+          path="/orderComplete"
+          element={<OrderComplete details={details}/>}
           />
         </Route>
     </Routes>
