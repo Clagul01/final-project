@@ -20,14 +20,15 @@ export default function Summary({details, basket}) {
                         <div class="content column">
                             <h6 class="title">Please Check Your Details:</h6>
                             <p class="subtitle">{details.name}</p>
-                            <p class="subtitle">{details.address}</p>
-                            <p class="subtitle">{details.postcode}</p>
+                            <p class="subtitle is-size-6">{details.address}</p>
+                            <p class="subtitle is-size-6">{details.postcode}</p>
                             <p>Name of Account Holder: {details.cardName}</p>
                             <p>Card Number: {details.cardNumber}</p>
                             <p>Expiry Date: {details.expiryDate}</p>
                             <p>CVC: ***</p>
                         </div>
                         <div class="content column">
+                        <h6 class="title">Order Summary:</h6>
                             { basketArray.map((index) => (
                                 <li key={index}>
                                 {<span>{index.name}</span>} {"  =  £"} {<span>{index.price}</span>}

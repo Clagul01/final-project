@@ -87,7 +87,7 @@ is-offset-one-fifth columns " >
 <div class="field">
   <label class="label is-family-monospace" for="textinput-2">CVC</label>
   <div class="control">
-    <input id="textinput-2" name="postcode" type="text" class="input is-family-monospace" onChange={handleChange}/>
+    <input id="textinput-2" name="CVC" type="text" class="input is-family-monospace" onChange={handleChange}/>
    
   </div>
 </div>
