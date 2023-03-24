@@ -1,0 +1,14 @@
+.hero {
+background-color: beige;
+
+
+}
+
+.colored-box {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: initial;
+  }
+  
+
