@@ -26,11 +26,11 @@ function DrinksItem({setBasket, basket}) {
                     <div key={index}>
                         <div class="card-image">
                             <figure class="image" >
-                                <img class="is-rounded" src={index.imgURL} alt={index.bev} style={{width: 120 + "px", height: 120 + "px"}}/>
+                                <img class="is-rounded" src={index.imgURL} alt={index.bev} style={{width: 160 + "px", height: 120 + "px"}}/>
                             </figure>
                         </div>
                         <hr/>
-                        <div class="card-content style='background-color:white'">
+                        <div class="card-content">
                             <div class="content">
                                 <p class="is-family-monospace is-size-6">{index.bev}</p>
                                 <p class="is-family-monospace is-size-5">£{index.price}</p>
