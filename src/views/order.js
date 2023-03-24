@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import "./order.css"
 
 
 const drinksList = [
@@ -29,7 +30,7 @@ function DrinksItem({setBasket, basket}) {
                             </figure>
                         </div>
                         <hr/>
-                        <div class="card-content">
+                        <div class="card-content style='background-color:white'">
                             <div class="content">
                                 <p class="is-family-monospace is-size-6">{index.bev}</p>
                                 <p class="is-family-monospace is-size-5">£{index.price}</p>

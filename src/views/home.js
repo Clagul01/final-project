@@ -1,6 +1,7 @@
 import React from "react";
 import MainLogo from "../utils/kaffet-logo.PNG"
 import { useNavigate } from "react-router";
+import "./home.css"
 
 export default function Home() {
   const navigate = useNavigate();
