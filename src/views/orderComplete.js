@@ -4,7 +4,7 @@ export default function OrderComplete({details}) {
         return(
             <>
             <section class="hero is-danger is-large">
-  <div class="hero-body colums">
+  <div class="hero-body columns">
     <p class="title column is-family-monospace">
       {details.name}, thank you for your order! <br/>
 We hope you enjoy your coffee :)
