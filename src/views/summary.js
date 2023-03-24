@@ -12,6 +12,7 @@ export default function Summary({details, basket}) {
     };
     return(
         <>
+        <section class="hero is-warning is-medium">
         <div class= "card columns m-0 is-align-content-stretch block">
                 <div class="column is-one-twelf has-padding-frame" style={{width: 165 + "px", height: 165 + "px", margin: 0}}>
                 <div>
@@ -43,6 +44,7 @@ export default function Summary({details, basket}) {
             </div>
             ))
         </div>
+        </section>
         
     </>
     )

@@ -33,10 +33,10 @@ function Navbar() {
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <Link to="/home" class="navbar-item">Home</Link>
-            <Link to="/order" class="navbar-item">Order</Link>
+            <Link to="/home" class="navbar-item is-family-monospace">Home</Link>
+            <Link to="/order" class="navbar-item is-family-monospace">Order</Link>
             <span class="navbar-item">
-              <div class="button is-primary is-inverted">
+              <div class="button is-primary is-family-monospace">
                 <Link to="/basket">Basket</Link>
               </div>
             </span>
