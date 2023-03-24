@@ -20,6 +20,7 @@ export default function Summary({details, basket}) {
                     <div class="card-content columns">
                         <div class="card column">
                             <h6 class="title is-size-5">Please Check Your Details:</h6>
+                            <hr/>
                             <p class="subtitle">{details.name}</p>
                             <p class="subtitle is-size-6">{details.address}</p>
                             <p class="subtitle is-size-6">{details.postcode}</p>

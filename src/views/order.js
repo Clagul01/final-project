@@ -25,15 +25,17 @@ function DrinksItem({setBasket, basket}) {
                     <div key={index}>
                         <div class="card-image">
                             <figure class="image" >
-                                <img class="is-rounded" src={index.imgURL} alt={index.bev} style={{width: 150 + "px", height: 150 + "px"}}/>
+                                <img class="is-rounded" src={index.imgURL} alt={index.bev} style={{width: 120 + "px", height: 120 + "px"}}/>
                             </figure>
                         </div>
+                        <hr/>
                         <div class="card-content">
                             <div class="content">
                                 <p class="is-family-monospace is-size-6">{index.bev}</p>
                                 <p class="is-family-monospace is-size-5">£{index.price}</p>
                             </div>
                     </div>
+                
                     <footer class="card-footer">
                         <button onClick={() => handleClick(index.bev, index.price)} class="button is-danger card-footer-item is-family-monospace is-size-6">Add to basket</button>
                     </footer>
